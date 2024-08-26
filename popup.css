@@ -1,0 +1,154 @@
+/*POPUP*/
+.body-fixed {
+    overflow: hidden;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.popup_open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__content {
+    position: relative;
+    padding: 50px;
+    width: 950px;
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    transition: all 0.8s ease;
+}
+
+.popup_open .popup__content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+}
+
+.popup__close-btn {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url(./resourses/popup-close-btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.popup__title {
+    font-weight: 700;
+}
+
+.limit__flexbox {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__limit {
+    padding-left: 20px;
+    width: 450px;
+    height: 58px;
+    box-sizing: border-box;
+}
+
+.addLimit-btn {
+    width: 350px;
+    height: 58px;
+    color: #fff;
+    background-color: #0094ff;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {      
+    .popup__content {
+        padding: 35px;
+        width: 700px;
+    }
+    
+    .popup__close-btn {
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .limit__flexbox {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .input__limit {
+        padding-left: 15px;
+        width: 350px;
+        height: 40px;
+    }
+    
+    .addLimit-btn {
+        width: 250px;
+        height: 40px;
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .popup {
+        padding: 15px;
+    }
+    
+    .popup__content {
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .popup__close-btn {
+        top: 15px;
+        right: 15px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    .limit__flexbox {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    
+    .input__limit {
+        padding-left: 10px;
+        width: 100%;
+        height: 35px;
+        box-sizing: border-box;
+    }
+    
+    .addLimit-btn {
+        width: 100%;
+        height: 35px;
+        font-size: 18px;
+    }
+}

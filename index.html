@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses App</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Учет расходов</h1>
+
+    <div class="flexbox">
+        <section class="input__section">
+            <input id="inputExpense"
+                class="input__expense"
+                placeholder="тг."
+                type="number">
+            <select id="categoryExpense" class="input__expense" name="category">
+                <option value="Билеты">Билеты</option>
+                <option value="Жилье">Жилье</option>
+                <option value="Транспорт">Транспорт</option>
+                <option value="Еда">Еда</option>
+                <option value="Экскурсии">Экскурсии</option>
+                <option value="Прочее">Прочее</option>
+            </select>
+        </section>
+    
+        <button id="addButton" class="add__button">Добавить</button>
+        
+        <section class="finance__section">
+            <p class="finance__title">Лимит: <span id="expensesLimit"></span></p>
+            <button id="popupOpenButton" class="limit-btn"></button>
+            <p class="finance__title">Всего: <span id="expensesSum"></span></p>
+            <p class="finance__title">Статус: <span id="expensesStatus" class="status">Все хорошо</span></p>
+        </section>
+    
+        <section class="history__section">
+            <h2 class="history__head">История:</h2>
+            <div id="expenses"></div>
+        </section>
+
+        <button id="restartButton" class="restart__button">Сбросить расходы</button>
+    </div>
+
+    <div class="js-popup popup">
+        <div id="js-popup__content" class="popup__content">
+            <button id="popupCloseButton" class="popup__close-btn"></button>
+            <h2 class="popup__title">Новый лимит</h2>
+            <div class="limit__flexbox">
+                <input id="inputLimit"
+                class="input__limit"
+                placeholder="тг."
+                type="number">
+                <button id="addLimitButton" class="addLimit-btn">Задать лимит</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

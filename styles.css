@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+
+@import url(popup.css);
+
+body {
+    margin: 0 auto;
+    width: 900px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    font-style: normal;
+}
+
+button, input, select {
+    font-family: inherit;
+    font-size: 32px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 65px;
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.input__section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    row-gap: 20px;
+}
+
+.input__expense {
+    padding-left: 20px;
+    width: 100%;
+    height: 58px;
+    box-sizing: border-box;
+}
+
+.add__button {
+    width: 370px;
+    height: 58px;
+    color: #fff;
+    background-color: #0094ff;
+    border: none;
+    cursor: pointer;
+}
+
+.finance__section {
+    position: relative;
+    width: 480px;
+}
+
+.finance__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.finance__title:last-child {
+    margin-top: 35px;
+}
+
+span {
+    font-weight: 400;
+}
+
+.limit-btn {
+    position: absolute;
+    top: -5px;
+    right: 100px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-image: url(./resourses/popup-btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.status {
+    color: #039000;
+}
+
+.status_red {
+    color: #fc0000;
+}
+
+
+.history__section {
+    width: 370px;
+}
+
+.history__head {
+    font-weight: 700;
+}
+
+
+.restart__button {
+    width: 480px;
+    height: 58px;
+    color: #fff;
+    background-color: #f00;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1000px) {
+    body {
+        width: 650px;
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    button, input, select {
+        font-size: 25px;
+    }
+
+    .flexbox {
+        row-gap: 40px;
+    }
+
+    .title {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .input__section {
+        width: 350px;
+        row-gap: 15px;
+    }
+
+    .input__expense {
+        padding-left: 15px;
+        height: 40px;
+    }
+
+    .add__button {
+        width: 250px;
+        height: 40px;
+    }
+
+    .finance__section {
+        width: 350px;
+    }
+    
+    .finance__title {
+        margin-bottom: 10px;
+    }
+    
+    .finance__title:last-child {
+        margin-top: 25px;
+    }
+    
+    .limit-btn {
+        top: -3px;
+        right: 50px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .history__section {
+        width: 250px;
+    }    
+    
+    .restart__button {
+        width: 350px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        padding: 50px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    button, input, select {
+        font-size: 18px;
+    }
+    
+    .flexbox {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    
+    .title {
+        margin-bottom: 20px;
+    }
+    
+    .input__section {
+        width: 100%;
+        row-gap: 10px;
+    }
+    
+    .input__expense {
+        padding-left: 10px;
+        height: 35px;
+        box-sizing: border-box;
+    }
+    
+    .add__button {
+        width: 100%;
+        height: 35px;
+    }
+    
+    .finance__section {
+        width: 100%;
+    }
+    
+    .finance__title {
+        margin-bottom: 10px;
+    }
+    
+    .finance__title:last-child {
+        margin-top: 15px;
+    }
+    
+    .limit-btn {
+        top: -2px;
+        right: 0;
+        width: 25px;
+        height: 25px;
+    }
+        
+    .history__section {
+        width: 100%;
+    }    
+    
+    .restart__button {
+        width: 100%;
+        height: 35px;
+    }
+}
