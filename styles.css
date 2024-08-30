@@ -82,7 +82,7 @@ span {
     background-color: #fff;
     background-image: url(./resourses/popup-btn.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: 50%;
     border: none;
     cursor: pointer;
