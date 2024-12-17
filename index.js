@@ -1,7 +1,7 @@
 let LIMIT = 10000;
 let sum = 0;
 const CURRENCY = 'тг';
-const STATUS_IN_LIMIT = 'Все хорошо';
+const STATUS_IN_LIMIT = 'Лимит не превышен';
 const STATUS_OUT_LIMIT = 'Лимит превышен.';
 const STATUS_OUT_LIMIT_CLASSNAME = 'status_red';
 
